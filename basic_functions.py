@@ -3,13 +3,6 @@ DATE_B = "20000101"
 DATE_E = datetime.today().strftime("%Y%m%d")
 
 
-def bulk_download_from_Google(secs, date_b=DATE_B, date_e=DATE_E):
-    for sec in secs:
-        path = "/CSV_price_google/" + sec + ".csv"
-        if not os.path.isfile(path):
-            GoogleQuote(sec, date_b, date_e).write_csv(path)
-
-
 def get_price(sec, date_b, date_e, filename=None):
     if filename is None:
         possible_filename = "/CSV_price_google/" + sec + ".csv"
