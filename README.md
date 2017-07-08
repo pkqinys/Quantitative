@@ -1,6 +1,6 @@
 # Quantitative
 
-This repository contains code that can help you do technical researches on securities.
+This repository contains python code that can help you do technical researches on securities.
 
 - data_collection.py: it contains a class hierachy called "Security". A "Security" class is used to fetch security informations and temporarily store them. In order for Security class to successfully save information from internet into local csv files, you have to first create two folders called CSV_price and CSV_price_google. CSV_price holds the csv files that you have manaully downloaded from yahoo finance, and CSV_price_google holds csv files that will be automatically saved when the functions in basci_functions.py use data from google. 
     
