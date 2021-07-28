@@ -5,6 +5,7 @@ DATE_E = datetime.today().strftime("%Y%m%d")
 
 def get_price(sec, date_b, date_e, filename=None):
     if filename is None:
+
         possible_filename = "/CSV_price_google/" + sec + ".csv"
         if os.path.isfile(possible_filename):
             return read_api_csv(possible_filename, sec).get_price(date_b, date_e)
